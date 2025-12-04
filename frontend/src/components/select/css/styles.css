@@ -1,0 +1,9 @@
+.input-container
+select {
+  flex: 1;
+  border: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

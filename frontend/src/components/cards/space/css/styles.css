@@ -1,0 +1,33 @@
+.space-card {
+  background-color: #f6b6b6;
+  min-width: 200px;
+  flex: 1;
+
+  padding: 20px;
+
+  border-radius: var(--page-radius);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+  border-left: solid 4px #e32626;
+
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+
+  transition: transform 0.2s;
+  user-select: none;
+
+  &.free {
+    border-left-color: green;
+    background-color: #dcfae7;
+  }
+}
+
+.space-card:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.space-card h2 {
+  font-size: 20px;
+}

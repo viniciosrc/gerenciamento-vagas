@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --header-bg: #003049;
+  --header-fg: #fff;
+
+  --page-bg: #f5f5f5;
+  --page-fg: #333;
+
+  --page-horizontal-padding: 5%;
+  --page-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--page-fg);
+}
+
+.input-container {
+  flex: 1;
+  height: 50px;
+
+  padding: 0 10px;
+
+  display: flex;
+  background-color: #fff;
+  gap: 10px;
+  border-radius: var(--page-radius);
+  border: solid 1px #ccc;
+}
+
+.input-container .icon-area {
+  height: 100%;
+  width: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.page-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container .page-content {
+  flex: 1;
+  padding: 10px var(--page-horizontal-padding);
+
+  animation: fadeIn 0.5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.page-container .page-content .inputs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.page-container .page-content .inputs-wrapper .search-wrapper {
+  flex: 1;
+}
+
+.page-container .page-content .inputs-wrapper .filter-select-wrapper {
+  width: 200px;
+}
+
+.page-container .page-content .spaces-card-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

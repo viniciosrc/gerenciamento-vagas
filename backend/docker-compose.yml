@@ -1,0 +1,13 @@
+services:
+  postgresql:
+    container_name: postgres_dhc
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: paradigmas_dhc
+    ports:
+      - "5432:5432"
+    
+    # por enquanto pra ambiente de desenvolvimento, não precisa disso
+    # volumes:
+      # - postgres_data:/var/lib/postgresql/data

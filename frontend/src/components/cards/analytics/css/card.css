@@ -1,0 +1,35 @@
+.analytics-card-container {
+  background-color: white;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border-radius: var(--page-radius);
+  flex: 1;
+
+  &.total-spaces {
+    background-color: #455559;
+    color: #fff;
+  }
+
+  &.avaliable-spaces {
+    background-color: #267365;
+    color: #fff;
+  }
+
+  &.unavailable-spaces {
+    background-color: #c1121f;
+    color: #fff;
+  }
+
+  &.occupation-spaces {
+    background-color: #025e73;
+    color: #fff;
+  }
+}
+
+.analytics-card-container h3 {
+  font-weight: 500;
+}

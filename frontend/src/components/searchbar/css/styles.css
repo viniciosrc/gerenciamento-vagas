@@ -1,0 +1,5 @@
+.input-container input {
+  border: none;
+  flex: 1;
+  border-radius: var(--page-radius);
+}
